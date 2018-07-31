@@ -1,7 +1,8 @@
+const path = require('path');
 const express = require('express');
 const exp = express();
 exp.use(express.json());
-const path = require('path');
+exp.use(express.static(path.join(__dirname, '../')))
 const { getAllIdols, postIdol, getIdol, patchIdol, deleteIdol } = require('./controller');
 
 const OK = 200;
