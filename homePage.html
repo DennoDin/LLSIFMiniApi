@@ -10,7 +10,11 @@
 <body>
   <h1>Welcome to the SIF Mini API</h1>
   <div>You can find my git repository <a href='https://github.com/DennoDin/LLSIFMiniApi'>here</a></div>
-  <div><span><b>/idol</b><br>gets you information on all idols</span></div>
+  <div><span><b>GET /idol</b><br>gets you information on all idols</span></div>
+  <div><span><b>GET /idol/:name</b><br>provides information on a specific idol</span></div>
+  <div><span><b>POST /idol</b><br>requires an ID, Name, and Unit. Sub_Unit optional. adds a new idol to the table</span></div>
+  <div><span><b>PATCH /idol/:name</b><br>requires a Name and Unit. Sub_Unit optional. lets you modify an idol's information</span></div>
+  <div><span><b>DELETE /idol/:name</b><br>deletes an idol from the table</span></div>
 </body>
 
 </html>
